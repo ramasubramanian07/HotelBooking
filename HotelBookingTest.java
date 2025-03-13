@@ -29,7 +29,7 @@ public class HotelBookingTest {
         driver.findElement(By.id("searchButton")).click();
 
         // Book Now
-        driver.findElement(By.cssSelector(".bookNow")).click();
+        driver.findElement(By.id("login1").click();
         driver.findElement(By.id("name")).sendKeys("Rama");
         driver.findElement(By.id("email")).sendKeys("rama@example.com");
         driver.findElement(By.id("phone")).sendKeys("9876543210");
@@ -46,7 +46,7 @@ public class HotelBookingTest {
         driver.get("https://your-github-hosted-url/adminDashboard");
         driver.findElement(By.id("adminUsername")).sendKeys("admin");
         driver.findElement(By.id("adminPassword")).sendKeys("admin123");
-        driver.findElement(By.cssSelector("button[type='submit']")).click();
+        driver.findElement(By.id("login2").click();
 
         // Count bookings before cancellation
         List<WebElement> bookingsBefore = driver.findElements(By.xpath("//table/tr"));
