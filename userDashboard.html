@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Search Hotels</h2>
+    <input type="text" id="searchHotel" placeholder="Enter hotel name">
+    <button id="searchButton">Search</button>
+
+    <div id="hotelsList">
+        <div class="hotel">
+            <p>Hotel Name: Grand Palace</p>
+            <p>Location: Chennai</p>
+            <p>Price per night: ₹3000</p>
+            <button class="bookNow" data-hotel-id="1">Book Now</button>
+        </div>
+    </div>
+
+    <div id="bookingForm">
+        <h3>Confirm Booking</h3>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone" required>
+        <input type="date" id="date" required>
+        <input type="number" id="days" placeholder="Number of Days" required>
+        <button id="confirmBooking">Confirm Booking</button>
+    </div>
+
+    <div id="bookingMessage"></div>
+
+    <script>
+        document.getElementById("confirmBooking").addEventListener("click", function() {
+            document.getElementById("bookingMessage").innerText = "Booking Successful!";
+        });
+    </script>
+</body>
+</html>
